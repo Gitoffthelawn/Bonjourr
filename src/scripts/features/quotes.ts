@@ -184,6 +184,8 @@ function refreshQuotes(sync: Sync, quoteslist: Local['quotesCache'] = []): void 
     const hasUserQuotes = type === 'user' && userlist
     const list = hasUserQuotes ? csvUserInputToQuotes(userlist) : quoteslist
 
+    console.log(sync, quoteslist)
+
     insertToDom(controlCacheList(list, lang, type, url))
 }
 
@@ -247,7 +249,6 @@ async function tryFetchQuotes(lang: string, type: Quotes['type'], url: string | 
 }
 
 function controlCacheList(list: Quote[], lang: string, type: Quotes['type'], url: Quotes['url']): Quote {
-    //
     if (type === 'user') {
         const randIndex = Math.round(Math.random() * (list.length - 1))
         storage.local.set({ userQuoteSelection: randIndex })
@@ -255,9 +256,9 @@ function controlCacheList(list: Quote[], lang: string, type: Quotes['type'], url
     }
 
     if (list.length > 1) {
-        const quote = list.shift()
+        list.shift()
         storage.local.set({ quotesCache: list })
-        return quote ?? { author: '', content: '' }
+        return list[0] ?? { author: '', content: '' }
     }
 
     tryFetchQuotes(lang, type, url).then((list) => {
