@@ -184,8 +184,6 @@ function refreshQuotes(sync: Sync, quoteslist: Local['quotesCache'] = []): void 
     const hasUserQuotes = type === 'user' && userlist
     const list = hasUserQuotes ? csvUserInputToQuotes(userlist) : quoteslist
 
-    console.log(sync, quoteslist)
-
     insertToDom(controlCacheList(list, lang, type, url))
 }
 
