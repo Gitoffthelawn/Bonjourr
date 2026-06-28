@@ -252,6 +252,10 @@
     top: 3.5em;
 }
 
+.titles.small.layout-text-left, .titles.small.layout-text-right {
+    text-align: center;
+}
+
 .backgrounds .link .link-icon {
     background-color: white;
     border-color: white;

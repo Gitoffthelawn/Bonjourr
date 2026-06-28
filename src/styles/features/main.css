@@ -67,7 +67,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
     min-height: 3.3em;
     column-gap: 0.5em;
 }

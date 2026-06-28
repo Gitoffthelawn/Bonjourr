@@ -1,5 +1,6 @@
 ## 22.3.0
 
+- New "Next quote" context menu button
 - Added advanced settings toggleable directly from JSON:
     - `altMode` to disable the Alt Mode
     - `escKey` to disable the escape key toggling settings
@@ -8,6 +9,8 @@
 - Fixed pomodoro widget not alignable using layout toolbox's text alignment
 - Fixed some quick links styling issues
 - Fixed digital world clocks overlapping when large font size + am/pm
+- Fixed really long link titles breaking quick links
+- Fixed refresh quote button not working on first click
 - Adjusted some text-shadows on #interface
 - Fixed a minor styling issue with selects in the settings
 - Firefox bookmarks separators are now ignored (#753)
