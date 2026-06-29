@@ -228,7 +228,7 @@ function initOptionsValues(data: Sync, local: Local): void {
     setInput('i_weight', data.font?.weight || '300')
     setInput('i_font-color', data.font.color ?? '#ffffff')
     setInput('i_size', data.font?.size || (IS_MOBILE ? '11' : '14'))
-    setInput('i_announce', data.announcements ?? 'major')
+
     setInput('i_synctype', local.syncType ?? (PLATFORM === 'online' ? 'off' : 'browser'))
     setInput('i_pmdr_volume', data.pomodoro?.volume ?? 0.7)
     setInput('i_pmdr_alarms', data.pomodoro?.alarm ?? 'marimba')
@@ -265,6 +265,9 @@ function initOptionsValues(data: Sync, local: Local): void {
     setCheckbox('i_sbsuggestions', data.searchbar?.suggestions ?? true)
     setCheckbox('i_sbnewtab', data.searchbar?.newtab ?? false)
     setCheckbox('i_qtauthor', data.quotes?.author ?? false)
+
+    // this one's weird because it was a select made into a checkbox
+    setCheckbox('i_announce', data.announcements === 'off' ? false : true)
     setCheckbox('i_supporters_notif', data.supporters?.enabled ?? true)
 
     colorInput('solid-background', data.backgrounds.color)
