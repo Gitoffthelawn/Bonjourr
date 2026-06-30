@@ -86,9 +86,9 @@ function watcher(platform: Platform): void {
 }
 
 function addDirectories(platform: Platform): void {
-    if (existsSync(`release/${platform}/src`)) {
-        return
-    }
+    // if (existsSync(`release/${platform}/src`)) {
+    //     return
+    // }
 
     ensureDirSync(`release/${platform}/src/assets/favicons`)
     ensureDirSync(`release/${platform}/src/assets`)
