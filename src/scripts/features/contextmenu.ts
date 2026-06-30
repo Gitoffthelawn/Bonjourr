@@ -254,8 +254,10 @@ queueMicrotask(() => {
             return
         }
 
-        // Otherwise, closes the custom one and opens the regular one
-        closeContextMenu()
+        // Otherwise, if not in context menu inputs, closes the custom one and opens the regular one
+        if (!document.querySelector('#contextmenu.shown')?.contains(event.target as Node)) {
+            closeContextMenu()
+        }
     })
 
     // closes context menu when moving to other tab/window
