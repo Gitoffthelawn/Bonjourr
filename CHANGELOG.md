@@ -5,6 +5,7 @@
     - `altMode` to disable the Alt Mode
     - `escKey` to disable the escape key toggling settings
 - Apply settings management's JSON with `cmd/ctrl + enter` keybind
+- Fixed inability to right click (and copy/paste) on context menu inputs (#890)
 - Fixed broken settings and context menu for RTL (right to left) languages
 - Fixed pomodoro widget not alignable using layout toolbox's text alignment
 - Fixed some quick links styling issues
