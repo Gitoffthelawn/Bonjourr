@@ -6,6 +6,7 @@
     - `escKey` to disable the escape key toggling settings
 - Apply settings management's JSON with `cmd/ctrl + enter` keybind
 - Fixed inability to right click (and copy/paste) on context menu inputs (#890)
+- Firefox bookmarks separators are now ignored (#753)
 - Fixed broken settings and context menu for RTL (right to left) languages
 - Fixed pomodoro widget not alignable using layout toolbox's text alignment
 - Fixed some quick links styling issues
@@ -13,8 +14,8 @@
 - Fixed really long link titles breaking quick links
 - Fixed refresh quote button not working on first click
 - Adjusted some text-shadows on #interface
-- Fixed a minor styling issue with selects in the settings
-- Firefox bookmarks separators are now ignored (#753)
+- Fixed a minor styling issue with selects in the Settings
+- No more tap-highlight-color (blue glow on touch) on Android devices (thanks @walway!)
 - New language: 🇮🇳 Marathi by @akdbtas 
 - New language: 🇲🇹 Maltese by @lucasfenech18
 
