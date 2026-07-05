@@ -66,7 +66,8 @@
             "tasks",
             "tests",
             "_locales"
-        ]
+        ],
+        "exclude": ["**/overview.md"]
     },
     "compilerOptions": {
         "strict": true,
