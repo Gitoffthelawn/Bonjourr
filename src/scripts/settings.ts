@@ -1268,7 +1268,7 @@ function showall(val: boolean, event: boolean): void {
 function settingsFooter(): void {
     const one = document.querySelector<HTMLAnchorElement>('#signature-one')
     const two = document.querySelector<HTMLAnchorElement>('#signature-two')
-    const version = document.getElementById('version')
+    const version = document.getElementById('version') as HTMLLinkElement
     const rand = Math.random() > 0.5
 
     if (one && two) {
@@ -1280,6 +1280,7 @@ function settingsFooter(): void {
 
     if (version) {
         version.textContent = SYNC_DEFAULT.about.version
+        version.href = `https://github.com/victrme/Bonjourr/releases/${SYNC_DEFAULT.about.version}`
     }
 }
 
