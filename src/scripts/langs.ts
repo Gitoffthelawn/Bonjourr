@@ -2,52 +2,69 @@
 // https://wikipedia.org/wiki/List_of_ISO_639_language_codes
 
 export const langList = {
+    // Core
     en: 'English',
     fr: 'Français',
     de: 'Deutsch',
-    it: 'Italiano',
     es: 'Español',
-    hi: 'Hindi',
+    it: 'Italiano',
+
+    // Western / Northern Europe
     ca: 'Català',
-    'pt-BR': 'Português (Brasil)',
-    'pt-PT': 'Português (Portugal)',
     nl: 'Nederlands',
     da: 'Dansk',
     sv: 'Svenska',
     nb: 'Norsk',
     is: 'Íslenska',
-    fi: 'suomi',
+    fi: 'Suomi',
+
+    // Southern / Eastern Europe
+    'pt-BR': 'Português (Brasil)',
+    'pt-PT': 'Português (Portugal)',
     pl: 'Polski',
     cs: 'Čeština',
-    hr: 'Hrvatski',
     sk: 'Slovenský',
     hu: 'Magyar',
     ro: 'Română',
+    hr: 'Hrvatski',
     el: 'Ελληνικά',
+    mt: 'Malti',
+
+    // Cyrillic / Balkan
     sr: 'Српски (ћирилица)',
     'sr-YU': 'Srpski (latinica)',
-    be: 'Беларуская',
-    uk: 'Українська',
     ru: 'Русский',
-    tr: 'Türkçe',
-    he: 'עִברִית',
-    hy: 'Հայերեն',
+    uk: 'Українська',
+    be: 'Беларуская',
+
+    // Middle East / Central Asia
     ar: 'العربية',
-    az: 'Azərbaycan',
-    uz: "O'zbekcha",
+    he: 'עִברִית',
     fa: 'فارسی',
+    tr: 'Türkçe',
+    az: 'Azərbaycan',
+    hy: 'Հայերեն',
+    uz: "O'zbekcha",
+
+    // South Asia
+    hi: 'Hindi',
+    mr: 'Marathi',
     te: 'తెలుగు',
-    id: 'Indonesia',
+
+    // Southeast Asia
+    id: 'Bahasa Indonesia',
     vi: 'Tiếng Việt',
+
+    // East Asia
     'zh-CN': '中国简体中文',
     'zh-HK': '香港繁體中文',
     'zh-TW': '臺灣正體中文',
     'nan-Hant-TW': '臺灣台語（漢羅）',
     ko: '한국어',
     ja: '日本語',
-    mr: 'Marathi',
-    mt: 'Malti',
-}
+
+    // Other 
+};
 
 // uses basic latin characters if not included
 export const subsets = {
