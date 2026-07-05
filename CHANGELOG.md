@@ -1,23 +1,29 @@
 ## 22.3.0
 
-- New "Next quote" context menu button
-- Added advanced settings toggleable directly from JSON:
+### New features:
+- Added advanced settings toggleable directly from settings management's JSON:
     - `altMode` to disable the Alt Mode
-    - `escKey` to disable the escape key toggling settings
+    - `escKey` to disable the escape key toggling settings (#316)
 - Apply settings management's JSON with `cmd/ctrl + enter` keybind
+- New "Next quote" button on context menu
+- Switching textures now remembers colour
+
+### New languages (thank you!!):
+- 🇮🇳 Marathi by @akdbtas 
+- 🇲🇹 Maltese by @lucasfenech18
+
+### Fixes:
 - Fixed inability to right click (and copy/paste) on context menu inputs (#890)
-- Firefox bookmarks separators are now ignored (#753)
 - Fixed broken settings and context menu for RTL (right to left) languages
 - Fixed pomodoro widget not alignable using layout toolbox's text alignment
 - Fixed some quick links styling issues
-- Fixed digital world clocks overlapping when large font size + am/pm
-- Fixed really long link titles breaking quick links
-- Fixed refresh quote button not working on first click
-- Adjusted some text-shadows on #interface
-- Fixed a minor styling issue with selects in the Settings
+- Fixed digital world clocks overlapping when large font size + am/pm (#869)
+- Fixed "Next quote" settings button not working the first click (#880)
+- Adjusted some text-shadows on `#interface`
+- Fixed a minor styling issue with selects in the settings
+- Firefox bookmarks separators are now ignored (#753)
 - No more tap-highlight-color (blue glow on touch) on Android devices (thanks @walway!)
-- New language: 🇮🇳 Marathi by @akdbtas 
-- New language: 🇲🇹 Maltese by @lucasfenech18
+- Fixed "Updates" notification toggle not showing its actual state (#883)
 
 ## 22.2.1
 
