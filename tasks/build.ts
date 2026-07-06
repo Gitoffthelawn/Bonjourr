@@ -257,9 +257,9 @@ function locales(platform: Platform): void {
         /**
          * #873
          * Duplicates language variant _locales with underscores
-         * because the Chrome Web Stores does not use the correct ISO standard for language codes
+         * because the Chrome Web Stores/Edge do not use the correct ISO standard for language codes
          */
-        if (platform === 'chrome' && lang.includes('-')) {
+        if ((platform === 'chrome' || platform === 'edge') && lang.includes('-')) {
             const undercoredLang = lang.replaceAll('-', '_')
             const output = `release/${platform}/_locales/${undercoredLang}`
 
