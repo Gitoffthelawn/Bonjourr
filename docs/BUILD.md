@@ -21,7 +21,7 @@ This command builds the production versions of the extension and creates the rel
 The generated Firefox extension is written to:
 
 ```
-release/bonjourr-firefox-22.2.1.zip
+release/bonjourr-firefox-<version>.zip
 ```
 
 The unpacked Firefox build is available in:
