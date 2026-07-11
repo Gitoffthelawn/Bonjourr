@@ -242,9 +242,12 @@ function submitSearch(e: Event): void {
     const domainUrl = hasProtocol ? val : `https://${val}`
     const searchUrl = createSearchUrl(val, engine)
     const url = isValidUrl(domainUrl) ? domainUrl : searchUrl
-    const target = newtab ? '_blank' : '_self'
+    if (newtab) {
+        globalThis.open(url, '_blank', 'noopener')
+        return
+    }
 
-    globalThis.open(url, target)
+    globalThis.open(url, '_self')
     return
 }
 
