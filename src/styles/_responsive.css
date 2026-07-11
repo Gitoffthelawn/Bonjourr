@@ -177,7 +177,8 @@
 /* fix for tap highlight indication for mobile devices */
 button,
 select,
-input {
+input,
+label {
     -webkit-tap-highlight-color: transparent;
 }
 
