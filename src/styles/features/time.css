@@ -578,6 +578,10 @@
     margin-top: 0.5em;
 }
 
+.clock-region:empty {
+    display: none;
+}
+
 #time-container.he_hidden ~ .clock-date {
     margin-top: 0;
 }

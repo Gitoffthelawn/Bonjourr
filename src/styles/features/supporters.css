@@ -174,7 +174,7 @@ html[data-supporters] #show-settings.shown:after {
 /* supporters modal */
 
 #supporters-modal-container {
-    position: absolute;
+    position: fixed;
     box-sizing: border-box;
     top: 0;
     left: 0;
