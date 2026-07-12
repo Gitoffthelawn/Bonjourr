@@ -174,10 +174,11 @@
     }
 }
 
-/* fix for tap highlight indication for mobile devices */
+/* removes blue glow on touch on Android devices */
 button,
 select,
-input {
+input,
+label {
     -webkit-tap-highlight-color: transparent;
 }
 
