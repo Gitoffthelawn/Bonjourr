@@ -30,7 +30,7 @@ While it aims to look and feel minimal, it still brings you lots of options to c
 [<img src="https://labels.tahoe.be/chrome_download_dark.svg" height="53" alt="Download Bonjourr for Chrome">](https://chrome.google.com/webstore/detail/bonjourr-%C2%B7-minimalist-lig/dlnejlppicbjfcfcedcflplfjajinajd)
 [<img src="https://labels.tahoe.be/firefox_download_dark.svg" height="53" alt="Download Bonjourr for Firefox">](https://addons.mozilla.org/firefox/addon/bonjourr-startpage/)
 [<img src="https://labels.tahoe.be/edge_download_dark.svg" height="53" alt="Download Bonjourr for Edge">](https://microsoftedge.microsoft.com/addons/detail/bonjourr-%C2%B7-minimalist-l/dehmmlejmefjphdeoagelkpaoolicmid)
-[<img src="https://labels.tahoe.be/safari_download_dark.svg" height="53" alt="Download Bonjourr for Safari">]([https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236](https://bonjourr.fr/docs/#safari))
+[<img src="https://labels.tahoe.be/safari_download_dark.svg" height="53" alt="Download Bonjourr for Safari">]([https://apps.apple.com/fr/app/bonjourr-startpage/id1615431236](https://bonjourr.fr/docs/#safari-macos))
 
 You can also [try it online 🌎](https://online.bonjourr.fr) before installing.
 
@@ -48,11 +48,11 @@ Here's a list of things you can do to help us out:
 
 - Give us feedback (positive and negative!) on how you use Bonjourr
 - Suggest new features or improvements of the existing ones
-- Create new [CSS snippets](https://bonjourr.fr/docs/styles) or [custom profiles](https://bonjourr.fr/docs/profiles)
-- [Translate](https://bonjourr.fr/docs/contribute/#translate) to a new language, or complete an existing one
+- Create new [CSS snippets](https://bonjourr.fr/docs/customisation/styles/) or [custom profiles](https://bonjourr.fr/docs/customisation/profiles/)
+- Translate [Bonjourr](https://bonjourr.fr/docs/reference/contribute/#translations) or [our website and documentation](https://github.com/morceaudebois/bonjourr.fr#-how-to-add-a-new-language)  to a new language, or complete an existing one
 - Contribute to [our website](https://github.com/morceaudebois/bonjourr.fr)
-- Add new quotes (especially non english/french) to [the API](https://github.com/victrme/i18n-quotes)
-- Suggest new [Unsplash photos](https://bonjourr.fr/docs/overview/#backgrounds)
+- Add new quotes (especially non English/French) to [the API](https://github.com/victrme/i18n-quotes)
+- Suggest new [Unsplash photos](https://bonjourr.fr/docs/customisation/backgrounds/#bonjourr-daylight-images)
 
 <br>
 
@@ -70,7 +70,7 @@ If you just want to say thank you and support our work, here's some ideas:
 
 If you feel like we've earned it and you want to support independant open source developpers, we'll gladly accept your donations! It motivates us to keep improving Bonjourr and makes it feel more real :)
 
-**As a token of our appreciation, donating will also get your name [featured in Bonjourr](https://bonjourr.fr/docs/overview/#supporters-notification) for the entire month after you donate!**
+**As a token of our appreciation, donating will also get your name [featured in Bonjourr](https://bonjourr.fr/docs/settings-management/notifications/#supporters-notification) for the entire month after you donate!**
 
 <div>
 

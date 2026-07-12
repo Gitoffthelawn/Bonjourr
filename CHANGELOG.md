@@ -47,7 +47,7 @@
   - You can now add line breaks to quotes using `\n`
   - Better context menu icons consistency
   - Performance improvements (thanks @Nachtfrische! #825)
-  - New CSS variables & possibilities! ([documented here](https://bonjourr.fr/docs/styles#colors-and-icons))
+  - New CSS variables & possibilities! ([documented here](https://bonjourr.fr/docs/customisation/styles/#colors-and-icons))
   - New settings footer design
   - Emoji as favicon is back on Edge (#700)
 - Bug fixes:
