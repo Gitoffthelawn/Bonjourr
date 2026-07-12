@@ -62,9 +62,8 @@ export const langList = {
     'nan-Hant-TW': '臺灣台語（漢羅）',
     ko: '한국어',
     ja: '日本語',
-
-    // Other 
-};
+    // Other
+}
 
 // uses basic latin characters if not included
 export const subsets = {
@@ -97,4 +96,15 @@ export const subsets = {
     'zh-TW': 'chinese-traditional',
     'nan-Hant-TW': 'chinese-traditional',
     ko: 'korean',
+}
+
+// languages bonjourr.fr is translated in
+export const siteLangs: Record<string, string> = {
+    // bonjourrLanguage: siteLanguage
+    fr: 'fr',
+    ru: 'ru',
+
+    // ukrainian and belarusian can link to russian site until we have an actual translation for them
+    'uk': 'ru',
+    'be': 'ru',
 }

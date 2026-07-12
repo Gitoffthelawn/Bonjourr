@@ -26,6 +26,7 @@ import { settingsNotifications } from './utils/notifications.ts'
 import { getPermissions } from './utils/permissions.ts'
 import { opacityFromHex } from './shared/generic.ts'
 import { loadCallbacks } from './utils/onsettingsload.ts'
+import { getLangForSite } from './utils/translations.ts'
 import { onclickdown } from 'clickdown/mod'
 import { filterData } from './compatibility/apply.ts'
 import { stringify } from './utils/stringify.ts'
@@ -115,6 +116,7 @@ function settingsInitEvent(event: Event): void {
     showall(sync.showall, false)
     traduction(settings, sync.lang)
     translatePlaceholders()
+    localiseSiteLinks()
     initBackgroundOptions(sync, local)
     initSupportersSettingsNotif(sync)
     initOptionsValues(sync, local)
@@ -1223,6 +1225,19 @@ function translateAriaLabels(): void {
 
         element.setAttribute('title', tradThis(title))
         element.setAttribute('aria-label', tradThis(title))
+    }
+}
+
+function localiseSiteLinks(): void {
+    const siteLang = getLangForSite()
+
+    if (siteLang === 'en') return
+
+    for (const link of document.querySelectorAll<HTMLLinkElement>('a.site-link')) {
+        const url = new URL(link.href)
+
+        url.pathname = `/${siteLang}${url.pathname}`
+        link.href = url.toString()
     }
 }
 

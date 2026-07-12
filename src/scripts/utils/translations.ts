@@ -1,4 +1,6 @@
 import { storage } from '../storage.ts'
+import { siteLangs } from '../langs.ts'
+
 import type { Local, Translations } from '../../types/local.ts'
 
 let trns: Translations | undefined
@@ -106,4 +108,9 @@ export function countryCodeToLanguageCode(lang: string): string {
     sanitizedLang = sanitizedLang.replace('_', '-')
 
     return sanitizedLang
+}
+
+// returns the needed lang code for the site URLs
+export function getLangForSite(): string {
+    return siteLangs[currentTrnsLang] ?? 'en'
 }
