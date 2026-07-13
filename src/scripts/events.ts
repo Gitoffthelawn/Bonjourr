@@ -22,7 +22,7 @@ export function userActions(advanced: Advanced): void {
 // Main functions
 
 function keyboardUserActions(advanced: Advanced, event: KeyboardEvent): void {
-    const { altKey, ctrlKey, metaKey, code, type } = event
+    const { altKey, ctrlKey, metaKey, shiftKey, code, type } = event
 
     const domsuggestions = document.getElementById('sb-suggestions')
 
@@ -81,6 +81,16 @@ function keyboardUserActions(advanced: Advanced, event: KeyboardEvent): void {
                 clientY: rect.top + 15,
             }),
         )
+    }
+
+    // import settings file with cmd/ctrl + shift + option + i
+    if (advanced.altMode && type === 'keydown' && shiftKey && altKey && (ctrlKey || metaKey) && code === 'KeyI') {
+        const fileImportInput = document.getElementById('file-import') as HTMLInputElement
+
+        if (fileImportInput) {
+            event.preventDefault()
+            fileImportInput.click()
+        } 
     }
 }
 
