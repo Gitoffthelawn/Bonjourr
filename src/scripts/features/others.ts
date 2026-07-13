@@ -66,9 +66,12 @@ export function pageControl(val: { width?: number; gap?: number }, isEvent?: tru
     }
 }
 
+let currentThemeMode: string
 export function darkmode(value: 'auto' | 'system' | 'enable' | 'disable', isEvent?: boolean): void {
+    const mediaQuery = globalThis.matchMedia('(prefers-color-scheme: dark)')
     const settings = document.querySelector<HTMLElement>('aside')
     let theme = 'light'
+    currentThemeMode = value
 
     switch (value) {
         case 'disable':
@@ -80,9 +83,10 @@ export function darkmode(value: 'auto' | 'system' | 'enable' | 'disable', isEven
             break
 
         case 'system':
-            theme = globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            theme = mediaQuery.matches ? 'dark' : 'light'
             break
 
+        // auto = "at night"
         default: {
             const now = minutator(new Date())
             const { sunrise, sunset } = suntime()
@@ -103,9 +107,13 @@ export function darkmode(value: 'auto' | 'system' | 'enable' | 'disable', isEven
         return
     }
 
-    globalThis.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+    mediaQuery.addEventListener('change', handleThemeChange)
+}
+
+function handleThemeChange(event: MediaQueryListEvent): void {
+    if (currentThemeMode === 'system') {
         document.documentElement.dataset.theme = event.matches ? 'dark' : 'light'
-    })
+    }
 }
 
 export function textShadow(init?: number, event?: number): void {
