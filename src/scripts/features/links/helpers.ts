@@ -37,8 +37,8 @@ export function getTitleFromEvent(event: Event): HTMLElement | undefined {
 }
 
 export function createTitle(link: Link): string {
-    const isInline = document.getElementById('linkblocks')?.className.includes('inline')
-    const isText = document.getElementById('linkblocks')?.className.includes('text')
+    const isInline = document.getElementById('linkblocks')?.classList.contains('inline')
+    const isText = document.getElementById('linkblocks')?.classList.contains('text')
 
     if (!(isInline || isText) || link?.title !== '') {
         return stringMaxSize(link.title ?? '', 64)
