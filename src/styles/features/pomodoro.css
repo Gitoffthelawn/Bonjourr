@@ -64,6 +64,10 @@ body.pomodoro-focus:has(#pomodoro_container:not(.hidden)) #interface {
     display: flex;
 }
 
+#pomodoro_container #pmdr_start svg {
+    padding-left: 3px;
+}
+
 #pomodoro_options input[type='number']:after {
     content: 'mn';
     display: none;
