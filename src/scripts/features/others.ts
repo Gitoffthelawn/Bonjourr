@@ -19,6 +19,10 @@ export function favicon(val?: string, isEvent?: true): void {
         }
     }
 
+    if (BROWSER === 'edge') {
+        return
+    }
+
     if (isEvent) {
         const isEmojiOrShape = val?.match(/[\p{Emoji}\u25A0-\u25FF]/gu) && !val?.match(/[0-9a-z]/g)
         eventDebounce({ favicon: isEmojiOrShape ? val : '' })

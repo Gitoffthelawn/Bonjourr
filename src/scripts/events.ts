@@ -90,7 +90,7 @@ function keyboardUserActions(advanced: Advanced, event: KeyboardEvent): void {
         if (fileImportInput) {
             event.preventDefault()
             fileImportInput.click()
-        } 
+        }
     }
 }
 
