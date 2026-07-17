@@ -77,7 +77,8 @@ export function openContextMenu(event: Event): void {
             main: !!target.closest(sectionMatching.main.section),
             quotes: !!target.closest(sectionMatching.quotes.section),
             pomodoro: !!target.closest(sectionMatching.pomodoro.section),
-            searchbar: !!target.closest(sectionMatching.searchbar.section),
+            // allows context menu on whole search bar except input (to allow for native paste)
+            searchbar: !!target.closest(sectionMatching.searchbar.section) && !target.closest('#searchbar'),
             notes: !!target.closest(sectionMatching.notes.section),
         },
         interface: target.matches('main#interface') || target.matches('body'),

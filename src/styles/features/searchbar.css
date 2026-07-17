@@ -73,6 +73,8 @@
     display: flex;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.1s, visibility 0.1s;
+    transition-behavior: allow-discrete;
 }
 
 #sb-buttons.shown {
